@@ -1,0 +1,63 @@
+﻿ h1 {color: #B8860B;}
+
+p {
+  font-family: 'Times New Roman', Times, serif;
+  
+}
+ 
+em {
+  color: green;
+  font-weight: bold;
+}
+ 
+strong {
+  color: red;
+  font-style: italic;
+  font-weight: initial;
+  text-align: center;
+}
+ 
+sup {
+  text-decoration: underline;
+}
+ 
+ins {
+  color: green;
+}
+ 
+del {
+  color: #B8860B
+;
+}
+ 
+mark {
+  background-color: cyan;
+}
+ 
+ul {
+  list-style-type: circle;
+}
+ 
+ol {
+  list-style-type: upper-alpha;
+}
+ 
+table, td {
+  border: 1px solid black;
+  
+}
+
+img.displayed {
+
+    display: block;
+
+    margin-left: auto;
+
+    margin-right: auto }
+
+body {
+background-image: url(./img/background.jpg);
+ color: white;
+
+ }
+

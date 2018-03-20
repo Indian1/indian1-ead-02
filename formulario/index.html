@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Yuri indiani</title>
+  <link rel="stylesheet" href="./css/estilo.css">
+</head>
+
+<body>
+  <h1>Formulário de cadastro</h1>
+
+  <form action='servidor.php' method='GET'>
+    <p>
+	<b>Nome completo:</b>
+		<input type='text' name='nome' required='true' placeholder='Insira o nome completo'>
+	</p>
+
+	<p>
+	<b>E-mail:</b>
+		<input type='email' placeholder='Insira um email válido' name='email'>
+	</p>
+
+	 <p>
+      <b>Sexo:</b>
+      <input type='radio' checked name='sexo' id='feminino' value='f'>
+      <label for='feminino'>Feminino</label>
+      <input type='radio' name='sexo' id='masculino' value='m'>
+      <label for='masculino'>Masculino</label>
+    </p>
+
+	<p>
+	<b>Data de nascimento:</b>
+		<input type='text' placeholder='DD/MM/AAAA' name='data'>
+	</p>
+
+	<p>
+	<b>Grau de escolaridade:</b>
+		 <select name="escolaridade" id="escolaridade" >
+			 <option value="em">Ensino médio</option>
+			 <option value="sc" selected >Superior completo</option>
+			 <option value="pg">Pós graduação</option>
+			 <option value="mt">Mestrado</option>
+			 <option value="dt">Doutorado</option>
+		 </select>
+	</p>
+
+	<p>
+	<b>Estilos musicais preferidos:</b>
+		<select name='estilos' id='estilos' multiple size=5>
+			<option value='rock'>Rock</option>
+			<option value='funk'>Funk</option>
+			<option value='samba'>Samba</option>
+			<option value='Pagode'>Pagode</option>
+			<option value='pop'>Pop</option>
+		</select>
+	</p>
+
+	<p>
+	<b>Nome de usuário:</b>
+		<input type='text' name='usuario' id='usuario'
+	</p>
+
+	<p>
+	<b>Senha:</b>
+		<input type='password' name='senha' id='senha'>
+	</p>
+
+	<p>
+      <b>Cor preferida:</b>
+      <input required type='color' name='color' id='color'>
+    </p>
+
+	<p>
+	<b>Quantidade de filhos:</b>
+		<input type='number' name='filhos' id='filhos'>
+	</p>
+
+	<p>
+	<b>Quantidade de veículos:</b>
+		0<input type='range' min='0' max='5' step='1' name='veiculos' id='veiculos'>5
+	</p>
+
+    <p>
+	<b>Comentários sobre o site:</b>
+		<textarea name="comentarios" id="comentarios" cols="30" rows="10">
+			</textarea>
+
+			
+	</p>
+
+    <p>
+      <input type='checkbox' checked name='ofertas' id='ofertas'>
+      <label for='ofertas'>
+       <b> Desejo receber ofertas via e-mail.</b>
+      </label>
+    </p>
+
+   
+   <input type='submit' value='Enviar'>
+			<input type='reset' value='Limpar campos'>
+		    <input type='hidden' name='id' id='id' value='234343'>
+   
+
+    
+
+  </form>
+</body>
+
+</html>
